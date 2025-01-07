@@ -8,6 +8,7 @@ import InputAdornment from "@mui/material/InputAdornment";
 import FormControl from "@mui/material/FormControl";
 import Visibility from "@mui/icons-material/Visibility";
 import VisibilityOff from "@mui/icons-material/VisibilityOff";
+import Button from "../common/Button.tsx";
 
 // 로그인/회원가입 폼 (Input + Button)
 const AuthForm = () => {
@@ -22,16 +23,16 @@ const AuthForm = () => {
   };
 
   return (
-    <div className="">
+    <div className="flex flex-col gap-2">
       <TextField
         id="outlined-basic"
         label="ID"
         variant="outlined"
-        sx={{ mb: 2 }}
+        sx={{ width: "25.5ch" }}
       />
       <Box sx={{ display: "flex", flexWrap: "wrap" }}>
         <div>
-          <FormControl sx={{ m: 1, width: "25ch" }} variant="outlined">
+          <FormControl sx={{ width: "25.5ch" }} variant="outlined">
             <InputLabel htmlFor="outlined-adornment-password">
               Password
             </InputLabel>
@@ -59,10 +60,15 @@ const AuthForm = () => {
           </FormControl>
         </div>
       </Box>
-
-      <div>
-        <span>아이디 찾기 | 비번 찾기</span>
-        <span>아직회원이 아니신가요?</span>
+      <Button
+        backgroundColor="bg-black"
+        text="로그인"
+        textColor="text-white"
+        fontSize="lg"
+      />
+      <div className="flex flex-col">
+        <span>아이디 찾기 / 비번 찾기</span>
+        <span>회원가입하시겠습니까?</span>
       </div>
     </div>
   );

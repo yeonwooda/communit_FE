@@ -9,6 +9,11 @@ module.exports = {
         turquoise: "#69d4dc",
         cornflowerblue: "#7aa1e2",
       },
+      fontSize: {
+        sm: "12px",
+        md: "18px",
+        lg: "24px",
+      },
     },
   },
   plugins: [],
