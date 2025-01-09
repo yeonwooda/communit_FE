@@ -23,7 +23,7 @@ const AuthForm = () => {
   };
 
   return (
-    <div className="flex flex-col gap-2">
+    <div className="flex flex-col items-center gap-3">
       <TextField
         id="outlined-basic"
         label="ID"
