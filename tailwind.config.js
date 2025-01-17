@@ -15,6 +15,7 @@ module.exports = {
       turquoise: "#69d4dc",
       cornflowerblue: "#7aa1e2",
       white: "#FFFFFF",
+      black: "#000",
     },
   },
   plugins: [],

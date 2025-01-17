@@ -11,7 +11,6 @@ export type buttonProps = {
     | "bg-black";
   textColor: "text-white" | "text-black";
   text: string;
-  fontSize: "sm" | "md" | "lg";
   onClick?: () => void;
 };
 
@@ -21,11 +20,10 @@ const Button = ({
   textColor,
   text,
   onClick,
-  fontSize,
 }: buttonProps) => {
   return (
     <button
-      className={`${backgroundColor} ${textColor}  ${fontSize} w-fit p-3 rounded-lg`} // 동적으로 borderRadiusClass 적용
+      className={`${backgroundColor} ${textColor} w-fit p-3 rounded-lg`}
       onClick={onClick}
     >
       {text}

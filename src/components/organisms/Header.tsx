@@ -1,8 +1,11 @@
 import React from "react";
 import Button from "../common/Button.tsx";
+import { useNavigate } from "react-router-dom";
 
 // Header (로그인/회원가입 버튼 포함)
 const Header = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="w-screen h-28 bg-slightlylighter flex items-center">
       <div className="max-w-5xl w-full mx-auto font-extrabold flex items-center justify-between text-red">
@@ -11,7 +14,7 @@ const Header = () => {
           backgroundColor="bg-white"
           text="로그인/회원가입"
           textColor="text-black"
-          fontSize="lg"
+          onClick={() => navigate("/login")}
         />
       </div>
     </div>
