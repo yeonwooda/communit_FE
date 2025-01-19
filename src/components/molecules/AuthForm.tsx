@@ -60,12 +60,7 @@ const AuthForm = () => {
           </FormControl>
         </div>
       </Box>
-      <Button
-        backgroundColor="bg-black"
-        text="로그인"
-        textColor="text-white"
-        fontSize="lg"
-      />
+      <Button backgroundColor="bg-black" text="로그인" textColor="text-white" />
       <div className="flex flex-col">
         <span>아이디 찾기 / 비번 찾기</span>
         <span>회원가입하시겠습니까?</span>

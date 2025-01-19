@@ -1,8 +1,13 @@
 import React from "react";
+import AgreeForm from "./AgreeForm.tsx";
 
 // 로그인, 회원가입 링크 (Login/Signup Button)
 const AuthLinks = () => {
-  return <div></div>;
+  return (
+    <>
+      <AgreeForm />
+    </>
+  );
 };
 
 export default AuthLinks;

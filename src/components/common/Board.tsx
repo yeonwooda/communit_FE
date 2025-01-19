@@ -1,20 +1,21 @@
 import React from "react";
+import Icon from "./Icon.tsx";
+import { FaClipboardCheck } from "react-icons/fa";
 
-export type boardProps = {
-  img: string;
-  rounded: "12px" | "30px" | "9999px";
+export type BoardProps = {
   text: string;
+  icontag: React.ReactNode;
+  onClick?: () => void;
 };
 
-const Board = ({ img, rounded, text }: boardProps) => {
+const Board = ({ text, icontag, onClick }: BoardProps) => {
   return (
-    <div>
-      <img
-        src={img}
-        className={`${rounded} w-60 h-60 m-10 bg-black`}
-        alt="board image"
-      />
-      <span>{text}</span>
+    <div
+      className="flex flex-col justify-center items-center gap-2 w-28 h-28 rounded-full hover:bg-cornflowerblue cursor-pointer"
+      onClick={onClick}
+    >
+      <span>{icontag}</span>
+      <span className="text-base">{text}</span>
     </div>
   );
 };
