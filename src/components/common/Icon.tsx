@@ -2,10 +2,15 @@ import React from "react";
 
 type IconProps = {
   icon: React.ReactNode;
+  onClick?: () => void;
 };
 
-const Icon = ({ icon }: IconProps) => {
-  return <div className="flex">{icon}</div>;
+const Icon = ({ icon, onClick }: IconProps) => {
+  return (
+    <div className="w-7 h-7" onClick={onClick}>
+      {icon}
+    </div>
+  );
 };
 
 export default Icon;
