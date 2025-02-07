@@ -12,8 +12,8 @@ const AgreeForm = () => {
   const label = { inputProps: { "aria-label": "Checkbox demo" } };
   const navigate = useNavigate();
   return (
-    <>
-      <p>
+    <div className="mt-28">
+      <p className="text-center">
         스위스 커뮤니티(이하 "서비스")는 스위스에 관심 있는 사용자들이 소통하고
         정보를 교류할 수 있도록 제공되는 플랫폼입니다.
         <br /> 본 이용약관(이하 "약관")은 사용자가 본 서비스를 이용함에 있어
@@ -253,7 +253,7 @@ const AgreeForm = () => {
         text="다음"
         onClick={() => navigate("/signup")}
       />
-    </>
+    </div>
   );
 };
 

@@ -1,5 +1,5 @@
 import React from "react";
-import MyPageTemplate from "../template/MyPageTemplate";
+import MyPageTemplate from "../template/MyPageTemplate.tsx";
 
 const Mypage = () => {
   return (

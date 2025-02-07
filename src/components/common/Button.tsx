@@ -12,15 +12,11 @@ export type buttonProps = {
   textColor: "text-white" | "text-black";
   text: string;
   onClick?: () => void;
+  onFocus?: () => void;
 };
 
 // Button 컴포넌트
-const Button = ({
-  backgroundColor,
-  textColor,
-  text,
-  onClick,
-}: buttonProps) => {
+const Button = ({ backgroundColor, textColor, text, onClick }: buttonProps) => {
   return (
     <button
       className={`${backgroundColor} ${textColor} w-fit p-3 rounded-lg`}

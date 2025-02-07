@@ -9,6 +9,7 @@ import Restaurants from "./components/pages/Restaurants.tsx";
 import Attractions from "./components/pages/Attractions.tsx";
 import AuthLinks from "./components/molecules/AuthLinks.tsx";
 import SignupForm from "./components/organisms/Signup.tsx";
+import Mypage from "./components/pages/Mypage.tsx";
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
           <Route path="login" element={<Login />} />
           <Route path="authlinks" element={<AuthLinks />} />
           <Route path="signup" element={<SignupForm />} />
+          <Route path="mypage" element={<Mypage />} />
           <Route path="freeboard" element={<FreeBoard />} />
           <Route path="infoboard" element={<InfoBoard />} />
           <Route path="attractions" element={<Attractions />} />
