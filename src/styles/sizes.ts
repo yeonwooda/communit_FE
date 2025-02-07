@@ -8,4 +8,10 @@ export const sizes = {
     xxl: "24px",
     xxxlarge: "30px",
   },
-};
+
+  size: {
+    small: "18px",
+    medium: "24px",
+    large: "30px",
+  },
+} as const;
