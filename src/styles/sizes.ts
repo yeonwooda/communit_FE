@@ -10,8 +10,9 @@ export const sizes = {
   },
 
   size: {
-    small: "18px",
-    medium: "24px",
-    large: "30px",
+    xs: "50px",
+    small: "100px",
+    medium: "150px",
+    large: "200px",
   },
 } as const;

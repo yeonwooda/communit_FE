@@ -5,6 +5,7 @@ import { TbLayoutDashboardFilled } from "react-icons/tb";
 import { AiOutlineComment } from "react-icons/ai";
 import { IoNewspaperOutline } from "react-icons/io5";
 import { useNavigate } from "react-router-dom";
+import { sizes } from "../../styles/sizes.ts";
 
 const MyPageTemplate = () => {
   const navigate = useNavigate(); // useNavigate 훅 사용
@@ -17,12 +18,17 @@ const MyPageTemplate = () => {
 
   return (
     <>
-      <h1 className="mt-3">마이페이지</h1>
-      <div className="flex justify-between mb-5">
-        <div>
+      <h1
+        className="mt-3 mb-9  font-semibold"
+        style={{ fontSize: sizes.fontSize.xxxlarge }}
+      >
+        마이페이지
+      </h1>
+      <div className="flex mb-5">
+        <div className="mr-10">
           <img src="/images/프로필.png" alt="프로필" />
         </div>
-        <ul className="flex space-x-4">
+        <ul className="flex space-x-4 items-center">
           {menuItems.map((item) => (
             <li key={item} className="cursor-pointer">
               {item}
