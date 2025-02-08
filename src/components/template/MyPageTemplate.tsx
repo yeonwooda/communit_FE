@@ -1,4 +1,5 @@
 import React from "react";
+import { useProfileStore } from "../../store/store.ts"; // zustand 사용
 import Icon from "../common/Icon.tsx";
 import Button from "../common/Button.tsx";
 import { TbLayoutDashboardFilled } from "react-icons/tb";
@@ -9,6 +10,7 @@ import { sizes } from "../../styles/sizes.ts";
 
 const MyPageTemplate = () => {
   const navigate = useNavigate(); // useNavigate 훅 사용
+  const { image, name, username, bio } = useProfileStore(); // 상태 가져오기
 
   const handleProfileEdit = () => {
     navigate("/mypage-edit"); // 프로필 편집 페이지로 이동
@@ -26,7 +28,7 @@ const MyPageTemplate = () => {
       </h1>
       <div className="flex mb-5">
         <div className="mr-10">
-          <img src="/images/프로필.png" alt="프로필" />
+          <img src={image} alt="프로필" />
         </div>
         <ul className="flex space-x-4 items-center">
           {menuItems.map((item) => (
